@@ -8,15 +8,11 @@ tailcord --channel=lab-alerts -n 10 -f
 
 ![demo](demo.gif)
 
----
-
 ## Motivation
 
 I use Discord as a notification server for my side-project microservices. I'd rather
 watch alerts in a persistent terminal window than keep the Discord app open. `tailcord`
 shows plain-text messages from a single channel - nothing more.
-
----
 
 ## Installation
 
@@ -35,8 +31,6 @@ export PATH="$PATH:$(go env GOPATH)/bin"
 ```bash
 GOPROXY=direct go install github.com/ckinan/tailcord@latest
 ```
-
----
 
 ## Discord setup
 
@@ -81,8 +75,6 @@ tailcord auth
 Credentials are stored in your OS keychain (macOS Keychain, GNOME Keyring, or
 Windows Credential Manager) - you only do this once per machine.
 
----
-
 ## Usage
 
 ```bash
@@ -105,8 +97,6 @@ tailcord --channel=lab-alerts -n 5 -f
 tailcord --channel=lab-alerts -f | grep "ERROR"
 tailcord --channel=lab-alerts -n 50 | grep "alertbot"
 ```
-
----
 
 ## Output format
 
